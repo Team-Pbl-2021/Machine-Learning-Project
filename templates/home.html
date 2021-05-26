@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Stroke | Machine Learning</title>
+    <link href="{{url_for('static',filename='css/style.css')}}">
 </head>
 <body>
 <h1>This is web page for machine learning</h1>
@@ -10,18 +11,20 @@
     <label>Gender</label>
     <input type="radio" value="1" name="gender">Male
     <input type="radio" value="0" name="gender">female
-    <input type="text" placeholder="age">
-    <input type="checkbox" value="1">Hyper-tension
-    <input type="checkbox" value="1">Heart-disease
+    <br>
+    <input type="text" placeholder="age" name="age"><br>
+    <input type="radio" value="1" name="hypertension">Hyper-tension
+    <input type="radio" value="1" name="heardisease">Heart-disease
     <input type="radio" name="residence" value="0">Urban
     <input type="radio" name="residence" value="1">rural
-    <input type="text" placeholder="glucose level">
-    <input type="text" placeholder="BMI">
-    <input type="radio" name="smoke">Formelly smoked
-    <input type="radio" name="smoke">Never smoked
-    <input type="radio" name="smoke">smokes
-    <input type="radio" name="smoke">unknown
+    <input type="text" placeholder="glucose level" name="glucose">
+    <input type="text" placeholder="BMI" name="bmi">
+    <input type="radio" name="formellysmoke" value="1">Formelly smoked
+    <input type="radio" name="neversmoked" value="1">Never smoked
+    <input type="radio" name="smokes" value="1">smokes
+    <input type="radio" name="unknown" value="1">unknown
     <button>Submit</button>
 </form>
+{{prediction_text}}
 </body>
 </html>

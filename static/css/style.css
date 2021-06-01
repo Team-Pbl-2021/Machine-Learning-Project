@@ -1,0 +1,33 @@
+body{
+back-ground: powderblue;
+}
+h1{
+background-color:rgba(60, 60, 60 ,1); 
+text-shadow: 2px 2px 5px black;
+text-align:center;;font-family: verdana;
+font-size: 200%;
+border: 3px solid white;
+margin: 25px;";
+}
+body {
+background: url(https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); background-size: 100%;
+color:white;
+}
+form {
+background-color:rgba(60, 60, 60 ,0.5);
+padding: 70px;
+text-align:center;
+font-family: georgia;
+font-size: 120%;
+border: 3px solid white;
+margin: 25px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}

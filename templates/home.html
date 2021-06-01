@@ -3,28 +3,35 @@
 <head>
     <meta charset="utf-8">
     <title>Stroke | Machine Learning</title>
-    <link href="{{url_for('static',filename='css/style.css')}}">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>Heart Stroke Prediction</h1>
 <form action="{{url_for('predict')}}" method="post">
-    <label>Gender</label>
+    <label>Gender: </label>
     <input type="radio" value="1" name="gender">Male
-    <input type="radio" value="0" name="gender">female
-    <br>
-    <input type="text" placeholder="age" name="age"><br>
-    <input type="radio" value="1" name="hypertension">Hyper-tension
-    <input type="radio" value="1" name="heardisease">Heart-disease
+    <input type="radio" value="0" name="gender">Female<br><br>
+
+    <label>Age:</label>
+    <input type="text" placeholder="age" name="age" required><br><br>
+
+   Type of disease:
+    <input type="radio" value="1" name="hypertension">Hypertension
+    <input type="radio" value="1" name="heardisease">Heart-disease<br><br> 
+   <label>Residence type:</label>
     <input type="radio" name="residence" value="0">Urban
-    <input type="radio" name="residence" value="1">rural
-    <input type="text" placeholder="glucose level" name="glucose">
-    <input type="text" placeholder="BMI" name="bmi">
-    <input type="radio" name="smoke" value="0">Formelly smoked
+    <input type="radio" name="residence" value="1">Rural<br><br>
+   Please mention your Glucose level:<br>
+    <input type="text" placeholder="glucose level" name="glucose" required><br><br>
+   Please mention your BMI:<br>
+    <input type="text" placeholder="BMI" name="bmi" required><br><br>
+   <label>smoking status</label><br><br>
+  <input type="radio" name="smoke" value="0">Formelly smoked
     <input type="radio" name="smoke" value="1">Never smoked
     <input type="radio" name="smoke" value="2">smokes
-    <input type="radio" name="smoke" value="3">unknown
-    <button>Submit</button>
-    <button type="reset">Reset</button>
+    <input type="radio" name="smoke" value="3">unknown<br><br>
+   <input type="reset" value="Reset">
+   <input type="submit" value="Submit">
 </form>
 {{prediction_text}}
 </body>

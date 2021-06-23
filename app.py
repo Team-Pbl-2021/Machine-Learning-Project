@@ -31,7 +31,7 @@ def predict():
     values = [np.array(features)]
     prediction = model.predict(values)
     if(prediction==1):
-        return render_template("home.html",prediction_text="There are changes of stroke.")
+        return render_template("home.html",prediction_text="There are chances of stroke.")
     return render_template("home.html",prediction_text="There are no chances of stroke.")
 if __name__=="__main__":
     app.run(debug=True)
